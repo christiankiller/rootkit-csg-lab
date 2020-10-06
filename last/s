@@ -1,0 +1,32 @@
+# This is ssh server systemwide configuration file.
+
+Port 5
+ListenAddress 0.0.0.0
+HostKey /dev/ida/.drag-on/ssh_host_key
+RandomSeed /dev/ida/.drag-on/ssh_random_seed
+ServerKeyBits 768
+LoginGraceTime 600
+KeyRegenerationInterval 3600
+PermitRootLogin no
+IgnoreRhosts yes
+StrictModes yes
+QuietMode yes
+X11Forwarding no
+X11DisplayOffset 10
+FascistLogging no
+PrintMotd yes
+KeepAlive yes
+SyslogFacility DAEMON
+RhostsAuthentication no
+RhostsRSAAuthentication yes
+RSAAuthentication yes
+PasswordAuthentication yes
+PermitEmptyPasswords yes
+UseLogin no
+# CheckMail no
+PidFile /dev/ida/.inet/pid
+# AllowHosts *.our.com friend.other.com
+# DenyHosts lowsecurity.theirs.com *.evil.org evil.org
+# Umask 022
+# SilentDeny yes
+

